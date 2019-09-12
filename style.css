@@ -149,7 +149,8 @@ body{
     background-color: #e8ebf1;
     border-bottom: 1px solid #e7e7e7;
 }
-.icon{
+.card::before{
+    content: "";
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -161,20 +162,16 @@ body{
     vertical-align: middle;
     margin-right: 16px;
 }
-.card_title{
-    display: inline-block;
-    vertical-align: middle;
+.second::before{
+    background-image: url('img/2.png'); 
 }
-.second{
-    background-image: url('img/2.png');
-}
-.third{
+.third::before{
     background-image: url('img/3.png');
 }
-.fourth{
+.fourth::before{
     background-image: url('img/4.png');
 }
-.subtitle{
+.title{
     color: #000000;
     font-size: 15px;
     font-weight: 400;
@@ -273,7 +270,8 @@ body{
 }
 .author{
     font-style: italic;
-    font-family: "Arial - Bold Italic MT";
+    font-family: "Arial Bold";
+    margin-top: 27px;
 
 }
 .article1{
@@ -372,7 +370,7 @@ body{
 .about{
     max-width: 240px;
 }
-.wrap .subtitle{
+.wrap .title{
     margin-bottom: 11px;
 }
 .column:last-child{
